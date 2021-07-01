@@ -3,13 +3,13 @@
 
 ## Installation
 ```sh
-npm i tw-voucher
+npm i @fortune-inc/tw-voucher
 ```
 
 ## Examples
 ตัวอย่างการเติมด้วยโค๊ด
 ```js
-const twvoucher = require('tw-voucher');
+const twvoucher = require('@fortune-inc/tw-voucher');
 
 twvoucher('เบอร์โทรศัพท์', 'xxxxhFog10Ijbmg1c').then(redeemed => {
     console.log(`redeem ซองของ ${redeemed.owner_full_name} จำนวน ${redeemed.amount} บาทแล้ว`) 
@@ -19,7 +19,7 @@ twvoucher('เบอร์โทรศัพท์', 'xxxxhFog10Ijbmg1c').then(r
 ```
 ตัวอย่างการเติมด้วย URL
 ```js
-const twvoucher = require('tw-voucher');
+const twvoucher = require('@fortune-inc/tw-voucher');
 
 twvoucher('เบอร์โทรศัพท์', 'https://gift.truemoney.com/campaign/?v=xxxxfhFog10Ijbmg1c').then(redeemed => {
     console.log(`redeem ซองของ ${redeemed.owner_full_name} จำนวน ${redeemed.amount} บาทแล้ว`) 
