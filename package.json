@@ -1,5 +1,5 @@
 {
-  "name": "tw-voucher",
+  "name": "@chanios/tw-voucher",
   "version": "1.0.0",
   "description": "redeem truewallet aungpao",
   "main": "index.js",
