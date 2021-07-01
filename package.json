@@ -1,5 +1,5 @@
 {
-  "name": "@chanios/tw-voucher",
+  "name": "@fortune-inc/tw-voucher",
   "version": "1.0.0",
   "description": "redeem truewallet aungpao",
   "main": "index.js",
@@ -14,10 +14,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chanios/tw-voucher.git"
+    "url": "git+https://github.com/Fortune-Inc/tw-voucher.git"
   },
   "bugs": {
-    "url": "https://github.com/chanios/tw-voucher/issues"
+    "url": "https://github.com/Fortune-Inc/tw-voucher/issues"
   },
-  "homepage": "https://github.com/chanios/tw-voucher#readme"
+  "homepage": "https://github.com/Fortune-Inc/tw-voucher#readme"
 }
