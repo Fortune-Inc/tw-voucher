@@ -1,6 +1,6 @@
 {
   "name": "@fortune-inc/tw-voucher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "redeem truewallet aungpao",
   "main": "index.js",
   "scripts": {
