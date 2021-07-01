@@ -11,7 +11,7 @@ npm i tw-voucher
 ```js
 const twvoucher = require('tw-voucher');
 
-twvoucher('xxx-xxx-xxxx', 'xxxxhFog10Ijbmg1c').then(redeemed => {ล้ว
+twvoucher('xxx-xxx-xxxx', 'xxxxhFog10Ijbmg1c').then(redeemed => {
     console.log(`redeem ซองของ ${redeemed.owner_full_name} จำนวน ${redeemed.amount} บาทแล้ว`) 
 }).catch(err => {
     console.error('invaild voucher code')
