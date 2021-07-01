@@ -1,4 +1,4 @@
-const twvoucher = require('tw-voucher');
+const twvoucher = require('@fortune-inc/tw-voucher');
 
 //ใช้โค๊ดอังเปา
 twvoucher('xxx-xxx-xxxx', 'xxxxhFog10Ijbmg1c').then(redeemed => {
