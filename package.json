@@ -1,7 +1,7 @@
 {
   "name": "@fortune-inc/tw-voucher",
   "version": "1.0.1",
-  "description": "redeem truewallet aungpao",
+  "description": "เติมเงิน Truewallet ด้วยซองอั่งเปา",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
