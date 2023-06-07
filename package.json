@@ -1,6 +1,6 @@
 {
   "name": "@fortune-inc/tw-voucher",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "เติมเงิน Truewallet ด้วยซองอั่งเปา",
   "main": "index.js",
   "scripts": {
