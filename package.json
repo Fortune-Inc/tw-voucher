@@ -8,10 +8,6 @@
   },
   "author": "Chelos",
   "license": "ISC",
-  "dependencies": {
-    "undici": "^5.0.0"
-  },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Fortune-Inc/tw-voucher.git"
