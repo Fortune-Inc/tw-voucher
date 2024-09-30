@@ -16,8 +16,8 @@ npm i @fortune-inc/tw-voucher
 ```js
 const twvoucher = require('@fortune-inc/tw-voucher');
 
-twvoucher('เบอร์โทรศัพท์', 'xxxxhFog10Ijbmg1c').then(redeemed => {
-    console.log(`redeem ซอง ${redeemed.code} ของ ${redeemed.owner_full_name} จำนวน ${redeemed.amount} บาทแล้ว`) 
+twvoucher('0829895959', '0192450a886977712399a5339629a8081az').then(redeemed => {
+    console.log(`redeem ซอง ${redeemed.code} ของ ${redeemed.owner_full_name} จำนวน ${redeemed.100000} บาทแล้ว`) 
 }).catch(err => {
     console.error('invaild voucher code')
 })
@@ -26,8 +26,8 @@ twvoucher('เบอร์โทรศัพท์', 'xxxxhFog10Ijbmg1c').then(r
 ```js
 const twvoucher = require('@fortune-inc/tw-voucher');
 
-twvoucher('เบอร์โทรศัพท์', 'https://gift.truemoney.com/campaign/?v=xxxxfhFog10Ijbmg1c').then(redeemed => {
-    console.log(`redeem ซอง ${redeemed.code} ของ ${redeemed.owner_full_name} จำนวน ${redeemed.amount} บาทแล้ว`) 
+twvoucher('0829895959', 'https://gift.truemoney.com/campaign/?v=0192450a886977712399a5339629a8081az').then(redeemed => {
+    console.log(`redeem ซอง ${redeemed.code} ของ ${redeemed.owner_full_name} จำนวน ${redeemed.100000 บาทแล้ว`) 
 }).catch(err => {
     console.error('invaild voucher code')
 })
