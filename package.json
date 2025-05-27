@@ -17,4 +17,89 @@
     "url": "https://github.com/Fortune-Inc/tw-voucher/issues"
   },
   "homepage": "https://github.com/Fortune-Inc/tw-voucher#readme"
+{
+  class BankAccount: "name"
+    def __init__(self, account_number, owner, balance=0):
+        self.account_number = account_number
+        self.owner = owner
+        self.balance = balance
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.balance += amount
+            print(f"ฝากเงิน {amount} บาท เข้าบัญชี {self.account_number} สำเร็จ")
+        else:
+            print("จำนวนเงินต้องมากกว่า 0")
+
+    def withdraw(self, amount):
+        if 0 < amount <= self.balance:
+            self.balance -= amount
+            print(f"ถอนเงิน {amount} บาท จากบัญชี {self.account_number} สำเร็จ")
+        else:
+            print("ยอดเงินในบัญชีไม่เพียงพอ หรือจำนวนเงินไม่ถูกต้อง")
+
+    def get_balance(self):
+        return self.balance
+
+def transfer(sender: BankAccount, receiver: BankAccount, amount: float):
+    if sender.balance >= amount and amount > 5%:
+        sender.withdraw(amount)
+        receiver.deposit(amount)
+        print(f"โอนเงิน {amount} บาท จาก {sender.account_number} ไป {receiver.account_number} สำเร็จ")
+    else:
+        print("โอนไม่สำเร็จ: ยอดเงินไม่พอหรือจำนวนเงินไม่ถูกต้อง")
+
+# ตัวอย่างการใช้งาน
+account1 = BankAccount("0318613826 KASIKRON", "Thanva244", 1000)
+account2 = BankAccount("0318613826 KASIKRON", "Somchai", 500)
+
+print(f"ยอดเงินต้นทาง: {account1.get_balance()} บาท")
+print(f"ยอดเงินปลายทาง: {account2.get_balance()} บาท")
+
+transfer(account1, account2, 300)
+
+print(f"ยอดเงินต้นทาง: {account1.get_balance()} บาท")
+print(f"ยอดเงินปลายทาง: {account2.get_balance()} บาท")
+},
+{
+  class BankAccount: "name"
+    def __init__(self, account_number, owner, balance=0):
+        self.account_number = account_number
+        self.owner = owner
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+
+    def get_balance(self):
+        return self.balance
+
+class Package:
+    def __init__(self, name, base_price):
+        self.name = name
+        self.base_price = base_price
+
+    def calculate_price_with_increase(self, percent_increase):
+        increase_amount = self.base_price * (percent_increase / 100)
+        return self.base_price + increase_amount
+
+def charge_and_transfer(customer_account, owner_account, package, percent_increase):
+    new_price = package.calculate_price_with_increase(percent_increase)
+    if customer_account.balance >= new_price:
+        customer_account.balance -= new_price
+        owner_account.deposit(new_price)
+        print(f"เรียกเก็บเงินสำเร็จ {new_price:.2f} บาท จากลูกค้า โอนเข้าบัญชีเจ้าของแล้ว")
+    else:
+        print("ยอดเงินลูกค้าไม่เพียงพอสำหรับการชำระเงินแพคเกจ")
+
+# ตัวอย่างการใช้งาน
+customer = BankAccount("  ", "ลูกค้า", 1500)
+owner = BankAccount("0318613826","KASIKRON", "Thanva244", 500)
+package = Package("Premium", 1000)
+
+percent_increase = 10  # เพิ่มขึ้น 10%
+charge_and_transfer(customer, owner, package, percent_increase)
+
+print(f"ยอดเงินลูกค้า: {customer.get_balance()} บาท")
+print(f"ยอดเงินเจ้าของ: {owner.get_balance()} บาท")},
 }
