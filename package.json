@@ -1,23 +1,20 @@
 {
   "name": "@fortune-inc/tw-voucher",
   "version": "1.1.1",
-  "description": "เติมเงิน Truewallet ด้วยซองอั่งเปา",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Chelos",
-  "license": "ISC",
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Fortune-Inc/tw-voucher.git"
   },
+  "main": "index.js",
   "bugs": {
     "url": "https://github.com/Fortune-Inc/tw-voucher/issues"
   },
+  "description": "เติมเงิน Truewallet ด้วยซองอั่งเปา",
   "homepage": "https://github.com/Fortune-Inc/tw-voucher#readme",
-  "dependencies": {
-    "fingerprint-me-not": "^0.0.6"
-  }
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module"
 }
